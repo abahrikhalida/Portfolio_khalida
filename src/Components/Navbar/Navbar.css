@@ -27,23 +27,16 @@
     list-style: none;
     gap: 60px;
     font-size: 20px;
-    
-     
 }
 .nav-menu li{
     display: flex;
     flex-direction: column;
-    list-style: none;
     gap: 5px;
     cursor: pointer;
-    
-     
 }
 .nav-menu li img{
     display: flex;
     margin: auto;
-    
-     
 }
 .nav-connect{
     padding: 20px 40px;
@@ -55,7 +48,6 @@
 }
 .nav-connect:hover{
     transform: scale(1.05);
-    
 }
 .anchor-link{
     text-decoration: none;
@@ -67,9 +59,18 @@
 .nav-mob-close {
     display: none;   
 }
+
+/* Fixed Mobile Styles */
 @media(max-width:768px){
     .navbar{
-        margin: 20px 50px;
+        margin: 20px 30px;
+    }
+    .navbar-title h1{
+        font-size: 30px; /* Smaller title on mobile */
+        padding: 0px 15px;
+    }
+    .navbar-title img {
+        width: 60px; /* Smaller pattern on mobile */
     }
     .nav-connect{
         display: none;
@@ -78,14 +79,21 @@
         display: block;
         position: fixed;
         right: 30px;
+        top: 30px;
+        width: 30px; /* Fixed size */
+        height: 30px;
+        z-index: 3;
+        cursor: pointer;
     }
     .nav-mob-close{
         display: block;
-        position: relative;
+        position: absolute;
         top: 30px;
-        left: 290px;
-        width: 30px;
-
+        right: 30px;
+        width: 25px; /* Fixed size */
+        height: 25px;
+        cursor: pointer;
+        z-index: 4;
     }
     .nav-menu{
         position: fixed;
@@ -94,16 +102,48 @@
         top: 0;
         gap: 30px;
         background-color: #1F0016;
-        width: 350px;
+        width: 250px; /* Smaller width for mobile */
         height: 100%;
-        z-index: 2;
+        z-index: 3;
         transition: right 0.5s;
-        right: -350px;
+        right: -250px;
+        padding-top: 80px; /* Space for close button */
     }
     .nav-menu li{
-        font-size: 30px;
-        padding-left: 100px;
+        font-size: 24px; /* Slightly smaller font */
+        padding-left: 50px; /* Less padding */
         flex-direction: row;
-        gap: 20px;
+        gap: 15px;
+    }
+    .nav-menu li img{
+        width: 80px; /* Smaller underline on mobile */
+    }
+}
+
+/* Extra Small Screens */
+@media(max-width:480px){
+    .navbar{
+        margin: 20px 15px;
+    }
+    .navbar-title h1{
+        font-size: 24px;
+        padding: 0px 10px;
+    }
+    .navbar-title img {
+        width: 50px;
+    }
+    .nav-mob-open{
+        right: 20px;
+        top: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    .nav-menu{
+        width: 220px;
+        right: -220px;
+    }
+    .nav-menu li{
+        font-size: 20px;
+        padding-left: 30px;
     }
 }
