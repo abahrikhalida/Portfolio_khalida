@@ -48,16 +48,7 @@ const Navbar = () => {
     </AnchorLink>
     {menu === "about" && <img src={underline} alt="" />}
   </li>
-  <li>
-    <AnchorLink
-      href='#services'
-      className='anchor-link'
-      onClick={() => setMenu("services")}
-    >
-      Services
-    </AnchorLink>
-    {menu === "services" && <img src={underline} alt="" />}
-  </li>
+  
   <li>
     <AnchorLink
       href='#portfolio'

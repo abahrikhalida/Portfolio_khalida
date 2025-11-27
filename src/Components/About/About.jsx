@@ -15,7 +15,7 @@ const About = () => {
             </div>
             <div className="about-right">
                 <div className="about-para">
-                    <p>am a final-year Information Systems and Web student, passionate about backend and mobile development. I have experience working with microservices, API integration, and database management, allowing me to build scalable and reliable systems.</p>
+                    <p> I am a final-year Information Systems and Web student, passionate about backend and mobile development. I have experience working with microservices, API integration, and database management, allowing me to build scalable and reliable systems.</p>
                     <p>I focus on creating efficient, secure, and well-structured web and mobile solutions. Motivated by continuous learning, I constantly explore and master new technologies to deliver high-quality, modern applications.</p>
                     
                 </div>
